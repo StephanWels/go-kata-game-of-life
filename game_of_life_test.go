@@ -26,18 +26,4 @@ var _ = Describe("game of life", func() {
 		}
 		Expect(NextGeneration(startingConfiguration)).To(Equal(expectedNextGeneration))
 	})
-
-	It("a stable configuration", func() {
-		startingConfiguration := []string{
-			".xx..",
-			".xx..",
-			".....",
-		}
-		expectedNextGeneration := []string{
-			".xx..",
-			".xx..",
-			".....",
-		}
-		Expect(NextGeneration(startingConfiguration)).To(Equal(expectedNextGeneration))
-	})
 })
